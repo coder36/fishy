@@ -32,7 +32,7 @@ This will open a server listening on port 5001:
 
 
 
-### Steps
+### Tasks
 
 1) Understand the API
 
@@ -42,13 +42,30 @@ This will open a server listening on port 5001:
 
 4) Make it look nice
 
-5) How would you test this ?
+5) Make it search in real time as you type
+
+6) How would you test this ?
+
+7) How could you get this to work if javascript was disabled ?
 
 
 
-### Some help
+### Help
 
-Example of calling an API using fetch:
+##### Creating a React app
+
+Make sure your version of node is >8.9.4
+```
+npm i create-react-app -g
+create-react-app fishfinder
+cd fishfinder
+npm start
+```
+
+Go to http://localhost:3000
+
+
+##### Example of calling an API using fetch:
 
 ```
 async function fetchGET(url) {
@@ -64,7 +81,6 @@ async function fetchGET(url) {
 fetchGET('http://localhost:5001/api/species/search?query=gadus')
 
 ```
-
 
 
 ### Links
